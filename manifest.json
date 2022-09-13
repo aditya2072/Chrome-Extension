@@ -1,0 +1,16 @@
+{
+    "name":"Pomodoro",
+    "Description":"Do  your tasks on time",
+    "version":"1",
+    "manifest_version": 3,
+
+    "background": {
+        "service_worker": "background.js"
+      }
+    
+
+
+
+
+
+}
