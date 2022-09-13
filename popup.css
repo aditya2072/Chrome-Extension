@@ -1,0 +1,9 @@
+body{
+    background:rgba(146, 238, 183, 0.668)
+}
+
+
+.container{
+    display: flex;
+    gap: 2rem;
+}
