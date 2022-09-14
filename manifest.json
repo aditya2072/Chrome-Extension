@@ -1,25 +1,21 @@
 {
-    "name":"fOCUS-dORO",
+	"name": "fOCUS-dORO",
 
-    "description":"Do  your tasks on time",
-    "version":"1",
-    "manifest_version": 3,
+	"description": "Do  your tasks on time",
+	"version": "1",
+	"manifest_version": 3,
 
-    "background": {
-        "service_worker": "background.js"
-      },
- 
-      
-"action":{
-  "default_popup": "popup.html"
-},
+	"background": {
+		"service_worker": "background.js"
+	},
 
-"icons":{
-  "16":"po.jpg",
-  "48":"po.jpg",
-  "128":"po.jpg"
-}
+	"action": {
+		"default_popup": "popup.html"
+	},
 
-
-
+	"icons": {
+		"16": "po.jpg",
+		"48": "po.jpg",
+		"128": "po.jpg"
+	}
 }
