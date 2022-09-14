@@ -10,10 +10,16 @@ body{
   
 }
 
-.short,.long{
+.short,.long,.start,.stop{
     
     backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(87, 200, 130, 0.7);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.125)
+}
+
+.timerImg{
+    background-color: wheat;
+    width:20em;
+    height:20em;
 }
