@@ -26,7 +26,7 @@ h1{
 .short,
 .long,
 .start,
-.stop {
+.stop,.focus {
 	backdrop-filter: blur(16px) saturate(180%);
 	background-color: rgba(87, 200, 130, 0.7);
 	border-radius: 12px;
