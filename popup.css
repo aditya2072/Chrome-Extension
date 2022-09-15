@@ -17,10 +17,16 @@ body {
 	background-color: rgba(87, 200, 130, 0.7);
 	border-radius: 12px;
 	border: 1px solid rgba(255, 255, 255, 0.125);
+	gap: 2rem;
 }
 
 .timerImg {
-	background-color: wheat;
-	width: 20em;
-	height: 20em;
+	background-color: white;
+	width:10rem;
+	height: 10rem;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius:10rem;
+	font-size: x-large;
 }
