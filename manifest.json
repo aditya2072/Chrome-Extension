@@ -17,5 +17,11 @@
 		"16": "po.png",
 		"32": "po.png",
 		"48":"po.png"
-	}
+	},
+	"permissions": ["storage"]
+	
 }
+
+
+
+
