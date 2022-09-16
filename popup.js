@@ -1,6 +1,6 @@
 /** @format */
 
-const defaultTimer = 25
+let defaultTimer =25;
 let time = defaultTimer * 60
 let stopBtn = document.querySelector('#stop-btn')
 const counter = document.querySelector('#timer')
@@ -35,7 +35,12 @@ document.addEventListener('click', (e) => {
 	if (!e.target.matches('.btn')) return
 	if (e.target.matches('#shortbreak')) {
 		counter.innerHTML = '5:00'
+          defaultTimer =5;
+          time=defaultTimer*60;
+ 
 	} else if (e.target.matches('#longbreak')) {
 		counter.innerHTML = '15:00'
+        defaultTimer=15;
+        time=defaultTimer*60;
 	}
 })
