@@ -1,17 +1,13 @@
 /** @format */
 
-let defaultTimer =25;
+let defaultTimer;
 let time = defaultTimer * 60
+let startBtn=document.querySelector('#start-btn')
 let stopBtn = document.querySelector('#stop-btn')
 const counter = document.querySelector('#timer')
+const focus = document.querySelector('#work')
 const halt = document.querySelector('#shortbreak')
 const cease = document.querySelector('#longbreak')
-
-let minutes 
-let seconds 
-let pause 
-
-
 
 const changeTimer = () => {
 	const minutes = Math.floor(time / 60)
@@ -20,7 +16,6 @@ const changeTimer = () => {
 	counter.innerHTML = `${minutes}:${seconds}`
 	time--
 }
-let startBtn = document.querySelector('#start-btn')
 let repeater
 
 startBtn.addEventListener('click', function () {
@@ -32,15 +27,18 @@ stopBtn.addEventListener('click', () => {
 })
 
 document.addEventListener('click', (e) => {
-	if (!e.target.matches('.btn')) return
-	if (e.target.matches('#shortbreak')) {
-		counter.innerHTML = '5:00'
-          defaultTimer =5;
-          time=defaultTimer*60;
- 
-	} else if (e.target.matches('#longbreak')) {
-		counter.innerHTML = '15:00'
-        defaultTimer=15;
-        time=defaultTimer*60;
-	}
-})
+	if (!e.target.matches('.btn')) return;
+		if (e.target.matches('#work')) {
+			counter.innerHTML = '25:00'
+			defaultTimer = 25
+			time = defaultTimer * 60
+		} else if (e.target.matches('#shortbreak')) {
+			counter.innerHTML = '5:00'
+			defaultTimer = 5
+			time = defaultTimer * 60
+		} else if (e.target.matches('#longbreak')) {
+			counter.innerHTML = '15:00'
+			defaultTimer = 15
+			time = defaultTimer * 60
+		}
+});
