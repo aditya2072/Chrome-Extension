@@ -14,14 +14,9 @@
 	},
 
 	"icons": {
-		"16": "po.png",
-		"32": "po.png",
-		"48":"po.png"
+		"16": "./images/po.png",
+		"32": "./images/po.png",
+		"48": "./images/po.png"
 	},
 	"permissions": ["unlimitedStorage"]
-	
 }
-
-
-
-
