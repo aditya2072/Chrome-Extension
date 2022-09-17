@@ -27,7 +27,7 @@ stopBtn.addEventListener('click', () => {
 })
 
 document.addEventListener('click', (e) => {
-	if (!e.target.matches('.btn')) return;
+	if (!e.target.matches('.btn2')) return;
 		if (e.target.matches('#work')) {
 			counter.innerHTML = '25:00'
 			defaultTimer = 25
