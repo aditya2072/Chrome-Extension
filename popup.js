@@ -8,6 +8,12 @@ const counter = document.querySelector('#timer')
 const focus = document.querySelector('#work')
 const halt = document.querySelector('#shortbreak')
 const cease = document.querySelector('#longbreak')
+let audioFocus=new Audio('focussound.mp3')
+let audioLongBreak=new Audio('calm.mp3')
+let audioStartBtn=new  Audio('start.mp3') 
+let audioStopBtn=new Audio('stopbtn.mp3')
+
+
 
 const changeTimer = () => {
 	const minutes = Math.floor(time / 60)
@@ -16,15 +22,20 @@ const changeTimer = () => {
 	counter.innerHTML = `${minutes}:${seconds}`
 	time--
 }
-let repeater
 
+let repeater
 startBtn.addEventListener('click', function () {
 	repeater = setInterval(changeTimer, 1000)
+    audioStartBtn.play()
 })
 
 stopBtn.addEventListener('click', () => {
 	clearInterval(repeater)
+    audioStopBtn.play()
+    audioFocus.pause()
+    audioLongBreak.pause()
 })
+
 
 document.addEventListener('click', (e) => {
 	if (!e.target.matches('.btn2')) return;
@@ -32,13 +43,20 @@ document.addEventListener('click', (e) => {
 			counter.innerHTML = '25:00'
 			defaultTimer = 25
 			time = defaultTimer * 60
+            audioFocus.play()
+            document.body.style.backgroundColor = "#92eeb7aa";
+
 		} else if (e.target.matches('#shortbreak')) {
 			counter.innerHTML = '5:00'
 			defaultTimer = 5
 			time = defaultTimer * 60
+            document.body.style.backgroundColor = "black";
+
 		} else if (e.target.matches('#longbreak')) {
 			counter.innerHTML = '15:00'
 			defaultTimer = 15
 			time = defaultTimer * 60
+            audioLongBreak.play();
+            document.body.style.backgroundColor = "#FFFF00";
 		}
 });
