@@ -43,6 +43,9 @@ h1 {
 	width: 100%
 
 }
+.start, .stop, .btn2{
+cursor: pointer;
+}
 
 .timerImg {
 	background-color:green;
