@@ -22,7 +22,7 @@ let repeater;
 startBtn.addEventListener("click", function () {
   changeTimer();
   repeater = setInterval(changeTimer, 1000);
-});
+  });
 
 stopBtn.addEventListener("click", () => {
   clearInterval(repeater);
@@ -44,3 +44,6 @@ document.addEventListener("click", (e) => {
     time = defaultTimer * 60;
   }
 });
+
+
+
