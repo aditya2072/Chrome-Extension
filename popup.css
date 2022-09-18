@@ -25,7 +25,7 @@ h1 {
 	padding-bottom: 1rem;
 }
 
-.btn2:hover{
+.start:hover,.stop:hover,.btn2:hover{
 	transform: scale(1.5);
 	cursor: grab;
 }
