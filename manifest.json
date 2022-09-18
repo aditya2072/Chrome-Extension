@@ -18,5 +18,5 @@
 		"32": "./images/po.png",
 		"48": "./images/po.png"
 	},
-	"permissions": ["unlimitedStorage"]
+	"permissions": ["storage"]
 }
