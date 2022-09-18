@@ -1,2 +1,4 @@
-chrome.action.setBadgeText({text: 'focus'});
-chrome.action.setBadgeBackgroundColor({color: '#000000'});
+
+chrome.action.setBadgeText({text: 'Focus'});
+chrome.action.setBadgeBackgroundColor({color: '#00FF00'});
+
