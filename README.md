@@ -1,6 +1,6 @@
 # fOCUS-dORO( Chrome-Extension)
 
-### mockup video ![here](sounds\mockup.mp4")
+### Demo video 
 
 
 ### about pomodoro
