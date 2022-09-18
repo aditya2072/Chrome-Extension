@@ -1,8 +1,7 @@
 /** @format */
 
 body {
-	background: rgba(146, 238, 183, 0.668);
-	
+	background: #92eeb7aa;
 }
 
 .btn {
@@ -26,26 +25,22 @@ h1 {
 	padding-bottom: 1rem;
 }
 
-.btn{
-	backdrop-filter: blur(16px) saturate(180%);
-	background-color: rgba(87, 200, 130, 0.7);
-	border-radius: 12px;
-	border: 1px solid rgba(255, 255, 255, 0.125);
-	padding: 0.4rem;
-	width: 100%;
-	font-family: monospace;
-	font-weight: bold;
+.btn2:hover{
+	transform: scale(1.5);
+	cursor: grab;
 }
-.btn1{
+
+
+.btn1 {
 	display: flex;
 	justify-content: space-around;
 	gap: 1.5rem;
-	width: 100%
-
+	width: 100%;
+	padding-top:1.5rem;
 }
 
 .timerImg {
-	background-color:green;
+	background-color: green;
 	width: 10rem;
 	height: 10rem;
 	align-items: center;
