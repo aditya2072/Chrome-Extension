@@ -9,3 +9,6 @@ https://user-images.githubusercontent.com/96715017/190901892-2b417eb0-8512-4293-
 <h2>### Tech Stacks</h2>
 
 It is created using HTML, CSS & Javascript. Also chrome extenstion with chrome storage API.
+<img src="images\1 FOCUS.JPG">
+<img src="images\2 BR1EAK.JPG">
+<img src="images\LONGBREAK.JPG">
